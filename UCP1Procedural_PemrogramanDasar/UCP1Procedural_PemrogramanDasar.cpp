@@ -32,8 +32,17 @@ int main() {
 	cout << "Masukan status sebenarnya :  ";
 	cin >> status;
 
-	cout << "Total lokasi dengan kualitas udara Sehat: " << status << endl;
-	cout << "Total lokasi dengan kualitas udara Tidak Sehat: " << status << endl;
+	char pilihan;
+	do {
+		string status;
+		cout << "Masukan status = ";
+		cin >> status;
+
+		cout << "Apakah anda ingin mengulangi lagi (y/n)?";
+		cin >> pilihan;
+
+	} while (pilihan == 'y' || pilihan == 'Y');
+
 }
 
 //1. int a[75]
